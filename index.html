@@ -22,7 +22,7 @@
         </header>
         <main>
             <section id="welcome-section">
-                <h1 class="intro"><span class="first-line">Hi, i'm <span class="khal">Khalid</span></span><br>I'm a web developer</h1>
+                <h1 class="intro"><span class="first-line">Hi, i'm <span class="khal">Khalid</span></span><br>I'm a frontend web developer</h1>
                 <a href="#projects"><div class="view-my">View My Work</div></a>
             </section>
             <img class="star" src="https://img.icons8.com/external-vitaliy-gorbachev-flat-vitaly-gorbachev/80/000000/external-star-origami-vitaliy-gorbachev-flat-vitaly-gorbachev.png"/>
@@ -43,11 +43,18 @@
                         <h2>Responsive</h2>
                         <p>My layouts will work on any device, big or small, no matter the size</p>
                     </div>
-                    <div id="fast">
+                    <div id="fast-desktop">
                         <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-launch-space-icongeek26-outline-colour-icongeek26-1.png"/>
                         <h2>Dynamic</h2>
                         <p>My websites are not static, i make pages come to life!</p>
                     </div>
+                </div>
+
+                <!--duplicate div for media query mobile-->
+                <div id="mobile">
+                    <img src="https://img.icons8.com/external-icongeek26-outline-colour-icongeek26/64/000000/external-launch-space-icongeek26-outline-colour-icongeek26-1.png"/>
+                    <h2>Dynamic</h2>
+                    <p>My websites are not static, i make pages come to life!</p>
                 </div>
                 <div id="my-skills">
                     <div id="write-up">
@@ -73,6 +80,26 @@
                             <img src="https://img.icons8.com/color/200/000000/javascript--v1.png"/><BR>
                             <p class="lang-caption">Javascript</p>
                         </div>
+                    </div>
+
+                    <!--duplicate section for media query mobile-->
+
+                    <div id="langs-mobile">
+                        <div id="html-css">
+                            <div>
+                                <img src="https://img.icons8.com/color/100/000000/html-5--v1.png"/><br>
+                                <p class="lang-caption">HTML5</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/color/100/000000/css3.png"/><br>
+                                <p class="lang-caption">CSS3</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/color/100/000000/javascript--v1.png"/><br>
+                                <p class="lang-caption">Javascript</p>
+                            </div>
+                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -102,9 +129,9 @@
                     </div>
                     <div class="project-title">
                         <a href="https://khalteck.github.io/order-summary" target="_blank"><img src="order-summary.jpg" class="showcase"></a>
-                        <div class="caption"><p class="senten">A purchase order summary</p></div>
+                        <div class="caption"><p class="senten">An order summary</p></div>
                     </div>
-                    <div class="project-title">
+                    <div class="project-title2">
                         <div class="spacer"></div>
                         <img src="https://img.icons8.com/ios-glyphs/60/000000/double-left--v2.png"/>
                         <p class="check-agin">Trust me.. check again</p>
@@ -120,15 +147,29 @@
                 <div class="last-underline2"></div>
             </div>
             <div class="last-talk">
-                <p class="let">Let's work together...</p>
+                <p class="let">Let's work together...</p><br>
                 <p class="coffee">How do you take your coffee?</p>
             </div>
+            <br><br><br>
             <div id="foot-cont">
                 <div><img src="https://img.icons8.com/fluency/40/ffffff/github.png"/><a href="https://github.com/khalteck" target="_blank">Github</a></div>
                 <div><img src="https://img.icons8.com/color/40/000000/twitter--v1.png"/><a href="https://twitter.com/khalteck" target="_blank">Twitter</a></div>
                 <div><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/40/000000/external-email-advertising-kiranshastry-lineal-color-kiranshastry-1.png"/><a href="mailto:khalidoyeneye@gmail.com">Email me</a></div>
                 <div><img src="https://img.icons8.com/fluency/40/000000/phone-not-being-used.png"/><a href="tel:+2348107327238">Call me</a></div>
             </div>
+
+            <!--duplicate div for media query mobile-->
+            <div id="foot-cont-mobile">
+                <div class="blocker">
+                    <div><img src="https://img.icons8.com/fluency/20/ffffff/github.png"/><a href="https://github.com/khalteck" target="_blank">Github</a></div>
+                    <div><img src="https://img.icons8.com/color/20/000000/twitter--v1.png"/><a href="https://twitter.com/khalteck" target="_blank">Twitter</a></div>
+                </div>
+                <div class="blocker">
+                    <div><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/20/000000/external-email-advertising-kiranshastry-lineal-color-kiranshastry-1.png"/><a href="mailto:khalidoyeneye@gmail.com">Email me</a></div>
+                    <div><img src="https://img.icons8.com/fluency/20/000000/phone-not-being-used.png"/><a href="tel:+2348107327238">Call me</a></div>
+                </div>
+            </div>
+
             <div class="footer-line"></div>
             <div id="copy">
                 <p class="footy"><span class="pink">Khalid Oyeneye</span> ©2021</p>
