@@ -177,7 +177,7 @@ header nav ul.topnav li a{
 }
 #about {
     width: 100vw;
-    height: 130vh;
+    height: 1000px;
     margin-top: 100px;
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
@@ -260,7 +260,7 @@ main section#about div#my-skills div#write-up p {
 }
 #projects {
     width: 100vw;
-    height: 120vh;
+    height: 850px;
     margin: 100px 0 0 0;
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
@@ -295,7 +295,7 @@ main section#about div#my-skills div#write-up p {
     margin: auto;
     display: grid;
     justify-content: space-between;
-    grid-template-columns: repeat(3, 355px);
+    grid-template-columns: repeat(3, auto);
     grid-template-rows: repeat(2, 250px);
     grid-gap: 13px;
 }
@@ -338,7 +338,7 @@ main section#about div#my-skills div#write-up p {
     background-color: #131418;
     color: #f5f5f5;
     width: 102%;
-    height: 90vh;
+    height: 700px;
     margin: 0;
     position: relative;
     bottom: -10px;
@@ -374,9 +374,10 @@ main section#about div#my-skills div#write-up p {
     font-weight: 800;
 }
 .coffee {
+    font-size: 23px;
     font-weight: lighter;
     position: relative;
-    bottom: 60px;
+    bottom: 70px;
 }
 .footer-line {
     width: 100vw;
@@ -387,7 +388,7 @@ main section#about div#my-skills div#write-up p {
 
 }
 #foot-cont {
-    width: 60%;
+    width: 80%;
     height: fit-content;
     justify-content: space-between;
     display: flex;
@@ -434,7 +435,11 @@ footer#contact div#foot-cont div a:hover {
 .pink {
     color: #fc35af;
 }
-@media (max-width: 480px) and (min-width: 280px) {
+
+
+/*mobile smartphones*/
+
+@media (max-width: 500px) and (min-width: 280px) {
     html {
         scroll-behavior: smooth;
     }
@@ -445,7 +450,7 @@ footer#contact div#foot-cont div a:hover {
         overflow-x: hidden;
     }
     main {
-        width: 100%;
+        width: 100vw;
     }
     header {
         width: 100%;
@@ -546,7 +551,7 @@ footer#contact div#foot-cont div a:hover {
         color: #52cafd;
     }
     #welcome-section {
-        width: 101%;
+        width: 104vw;
         height: 100vh;
         background-image: url('https://i.pinimg.com/564x/33/de/b1/33deb1e0f6fa28bd71413300e86077be.jpg');
         background-repeat: no-repeat;
@@ -554,6 +559,7 @@ footer#contact div#foot-cont div a:hover {
         text-align: center;
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
+        display: block;
         position: relative;
         top: 40px;
         left: -10px;
@@ -562,12 +568,12 @@ footer#contact div#foot-cont div a:hover {
     .first-line {
         width: 80%;
         font-weight: 400;
-        font-size: 20px;
+        font-size: 25px;
     }
     .intro {
         color: #ffffff;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 25px;
         margin: auto;
         position: relative;
         top: 30%;
@@ -581,8 +587,6 @@ footer#contact div#foot-cont div a:hover {
         width: 151.8px;
         border: 2px solid #ffffff;
         margin: auto;
-        position: relative;
-        top: 35%;
         font-size: 15px;
         padding-top: 14px;
         transition: all 200ms ease-in-out;
@@ -615,7 +619,7 @@ footer#contact div#foot-cont div a:hover {
     }
     #about {
         width: 100%;
-        height: 1250px;
+        height: 1000px;
         margin-top: 100px;
         z-index: 1;
         color: #3a3c41;  
@@ -623,17 +627,16 @@ footer#contact div#foot-cont div a:hover {
     }
     .heading {
         width: 120px;
-        /*position: absolute;
-        left: 50%;
-        margin-left: -60px;*/
+        margin: 0 0 0 -30px;
     }
     .heading2 {
         width: 120px;
         position: relative;
         top: 60px;
+        margin: 0 0 0 -30px;
     }
     #my-skills {
-        width: 80%;
+        width: 90%;
         margin: auto;
         display: block;
         justify-content: space-between;
@@ -641,16 +644,24 @@ footer#contact div#foot-cont div a:hover {
         top: 150px;
     }
     #write-up {
-        width: 90%;
+        width: 100%;
         text-align: center;
+    }
+    .fe-dev {
+        width: 100%;
+        line-height: 15px;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #515358;
     }
     #langs {
         display: none;
     }
     #langs-mobile {
         display: flex;
-        width: 100%;
+        width: 80%;
         text-align: center;
+        margin: auto;
         position: relative;
         top: 30px;
     }
@@ -685,8 +696,10 @@ footer#contact div#foot-cont div a:hover {
     }
     main section#about div#my-skills div#write-up p {
         width: 100%;
-        line-height: 25px;
-        font-weight: 100;
+        line-height: 15px;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #515358;
     }
     #html-css {
         display: flex;
@@ -694,9 +707,9 @@ footer#contact div#foot-cont div a:hover {
         justify-content: space-between;
     }
     .lang-caption {
-        font-size: 18px;
+        font-size: 13px;
         position: relative;
-        bottom: 30px;
+        bottom: 20px;
     }
     .jav {
         color: inherit;
@@ -708,7 +721,6 @@ footer#contact div#foot-cont div a:hover {
         z-index: 1;
         font-family: 'Montserrat', sans-serif;
         color: #3a3c41;
-        background: linear-gradient(15deg, #ffffff, #f5f5f5)
     }
     #merits {
         width: 90%;
@@ -787,14 +799,14 @@ footer#contact div#foot-cont div a:hover {
         position: relative;
         top: 5px;
         font-size: 13px;
+        color: #ffffff;
     }
     #contact {
         background-color: #131418;
         color: #f5f5f5;
-        width: 102%;
-        height: 500px;
+        width: 104.5vw;
+        height: 450px;
         display: block;
-        margin: 0;
         position: relative;
         bottom: -11px;
         left: -8px;
@@ -833,7 +845,480 @@ footer#contact div#foot-cont div a:hover {
         font-size: 15px;
         font-weight: lighter;
         position: relative;
-        bottom: 70px;
+        bottom: 60px;
+    }
+    .footer-line {
+        width: 104.5vw;
+        height: 3px;
+        background-color: #52cafd;
+        position: absolute;
+        top: 85%;
+    
+    }
+    #foot-cont {
+        width: 90%;
+        height: 60px;
+        justify-content: space-between;
+        display: none;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    #foot-cont-mobile {
+        width: 70%;
+        height: 60px;
+        justify-content: space-between;
+        display: flex;
+        margin: auto;
+    }
+    footer#contact div#foot-cont-mobile div.blocker {
+        height: fit-content;
+        display: block;
+    }
+    footer#contact div#foot-cont-mobile div.blocker div {
+        display: flex;
+        font-size: 15px;
+        font-weight: 600;
+        transition: all 200ms ease-in-out;
+        margin-bottom: 10px;
+    }
+    footer#contact div#foot-cont-mobile div.blocker div:hover {
+        transform: rotate(10deg);
+    }
+    footer#contact div#foot-cont-mobile div.blocker div a {
+        color: #ffeff9;
+        transition: all 200ms ease-in-out;
+    }
+    footer#contact div#foot-cont-mobile div.blocker div a:hover {
+        color: #52cafd;
+    }
+    #copy {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -100px;
+    }
+    .footy {
+        color: #d3d7e2;
+        font-weight: lighter;
+    }
+    .pink {
+        color: #fc35af;
+    }
+}
+
+
+/*low resolution tablets and ipads*/
+
+@media (max-width: 780px) and (min-width: 501px) {
+    html {
+        scroll-behavior: smooth;
+    }
+    body {
+        background-color: #ffffff;
+        width: 100vw;
+        font-family: 'Poppins', sans-serif;
+        overflow-x: hidden;
+    }
+    main {
+        width: 100vw;
+    }
+    header {
+        width: 100%;
+        height: 50px;
+        background-color: #131418;
+        border: 3px solid #52cafd;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+    }
+    nav {
+        display: none;
+        position: relative;
+        left: 5px;
+    }
+    .topnav {
+        list-style: none;
+        display: flex;
+        float: left;
+        position: relative;
+        bottom: 3px;
+    }
+    a {
+        text-decoration: none;
+    }
+    header nav ul.topnav li a{
+        padding-right: 35px;
+        padding-left: 35px;
+        color: #ffffff;
+        font-size: 18px;
+    }
+    .home::after {
+        content: "";
+        position: absolute;
+        background-color: #52cafd;
+        height: 1px;
+        width: 0;
+        left: 4.1em;
+        bottom: 23px;
+        transition: 0.2s;
+    }
+    .home:hover::after {
+        width: 52px;
+    }
+    .home:hover {
+        color: #52cafd;
+    }
+    .about::after {
+        content: "";
+        position: absolute;
+        background-color: #52cafd;
+        height: 1px;
+        width: 0;
+        left: 11.2em;
+        bottom: 23px;
+        transition: 0.2s;
+    }
+    .about:hover::after {
+        width: 51px;
+    }
+    .about:hover {
+        color: #52cafd;
+    }
+    .work::after {
+        content: "";
+        position: absolute;
+        background-color: #52cafd;
+        height: 1px;
+        width: 0;
+        left: 18em;
+        bottom: 23px;
+        transition: 0.2s;
+    }
+    .work:hover::after {
+        width: 72px;
+    }
+    .work:hover {
+        color: #52cafd;
+    }
+    .contact::after {
+        content: "";
+        position: absolute;
+        background-color: #52cafd;
+        height: 1px;
+        width: 0;
+        left: 26em;
+        bottom: 23px;
+        transition: 0.2s;
+    }
+    .contact:hover::after {
+        width: 67px;
+    }
+    .contact:hover {
+        color: #52cafd;
+    }
+    #welcome-section {
+        width: 100vw;
+        height: 100vh;
+        background-image: url('https://i.pinimg.com/564x/33/de/b1/33deb1e0f6fa28bd71413300e86077be.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: #ffffff;
+        font-family: 'Montserrat', sans-serif;
+        display: block;
+        position: relative;
+        top: 40px;
+        left: 0;
+        z-index: 1;
+    }
+    .first-line {
+        width: 80%;
+        font-weight: 400;
+        font-size: 25px;
+    }
+    .intro {
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 25px;
+        margin: auto;
+        position: relative;
+        top: 30%;
+    }
+    .khal {
+        color: #fc35af;
+    }
+    .view-my {
+        color: #ffffff;
+        height: 27.6px;
+        width: 151.8px;
+        border: 2px solid #ffffff;
+        margin: auto;
+        font-size: 15px;
+        padding-top: 14px;
+        transition: all 200ms ease-in-out;
+    }
+    .view-my:hover {
+        transform: rotate(20deg);
+        background-color: #52cafd;
+    }
+    .star {
+        display: none;
+        position: sticky;
+        left: 92%;
+        top: 8%;
+        z-index: 900;
+        transition: 500ms ease-in-out;
+    }
+    .star:hover {
+        transform: rotate(360deg);
+    }
+    .star2 {
+        display: none;
+        position: sticky;
+        left: 92%;
+        top: 8%;
+        z-index: 900;
+        transition: 500ms ease-in-out;
+    }
+    .star2:hover {
+        transform: rotate(360deg);
+    }
+    #about {
+        width: 100vw;
+        height: 1000px;
+        margin-top: 100px;
+        z-index: 1;
+        color: #3a3c41;  
+        display: block;
+    }
+    .heading {
+        width: 120px;
+        margin: 0 0 0 -30px;
+    }
+    .heading2 {
+        width: 120px;
+        position: relative;
+        top: 60px;
+        margin: 0 0 0 -30px;
+    }
+    #my-skills {
+        width: 90%;
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+        position: relative;
+        top: 150px;
+    }
+    #write-up {
+        width: 100%;
+        text-align: center;
+    }
+    .fe-dev {
+        width: 100%;
+        line-height: 15px;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #515358;
+    }
+    #langs {
+        display: none;
+    }
+    #langs-mobile {
+        display: flex;
+        width: 60%;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: 30px;
+    }
+    h1 {
+        font-size: 25px;
+        color: #3a3c41;
+    }
+    .underline {
+        height: 4px;
+        width: 90px;
+        background-color: #3a3c41;
+        position: relative;
+        bottom: 20px;
+    }
+    .underline2 {
+        height: 4px;
+        width: 110px;
+        background-color: #3a3c41;
+        position: relative;
+        bottom: 18px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .my-picture {
+        width: 166.6px;
+        height: 208.25px;
+        object-fit: cover;
+        object-position: 50% 50%;
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.3);
+    }
+    main section#about div#my-skills div#write-up p {
+        width: 100%;
+        line-height: 15px;
+        font-weight: lighter;
+        font-size: 13px;
+        color: #515358;
+    }
+    #html-css {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .lang-caption {
+        font-size: 13px;
+        position: relative;
+        bottom: 20px;
+    }
+    .jav {
+        color: inherit;
+    }
+    #projects {
+        width: 100vw;
+        height: 700px;
+        margin: 100px 0 0 0;
+        z-index: 1;
+        font-family: 'Montserrat', sans-serif;
+        color: #3a3c41;
+    }
+    #merits {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        top: 50px;
+    }
+    #fast {
+        width: 45%;
+        text-align: center;
+    }
+    #fast-desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+        width: 200px;
+        height: fit-content;
+        text-align: center;
+        margin: auto;
+        position: relative;
+        top: 80px;
+    }
+    #portfolio-container {
+        position: relative;
+        top: 100px;
+        width: 70%;
+        background-color: #f5f5f5;
+        height: fit-content;
+        margin: auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 47%);
+        grid-template-rows: repeat(3, 130px);
+        grid-gap: 13px;
+    }
+    .project-title {
+        text-align: center;
+        display: block;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+    }
+    .project-title2 {
+        text-align: center;
+        display: none;
+    }
+    .showcase {
+        height: 80%;
+        width: 100%;
+        background-color: #3a3c41;
+        transition: all 250ms ease-in-out;
+    }
+    .showcase:hover {
+        transform: scale(1.2, 1.2);
+        background-color: #52cafd;
+        opacity: 0.5;
+    }
+    .caption {
+        width: 100%;
+        height: 20%;
+        background-color: #52cafd;
+        position: relative;
+        bottom: 16.5px;
+        
+    }
+    .check-agin {
+        font-size: 15px;
+        font-weight: 300;
+        color: #fc35af
+    }
+    .spacer {
+        height: 20%;
+    }
+    .senten {
+        position: relative;
+        top: 5px;
+        font-size: 13px;
+        color: #ffffff;
+    }
+    #contact {
+        background-color: #131418;
+        color: #f5f5f5;
+        width: 100vw;
+        height: 450px;
+        display: block;
+        position: relative;
+        left: 0;
+        bottom: -8;
+    }
+    .last-heading {
+        color: #f5f5f5;
+    }
+    .last-underline {
+        height: 4px;
+        width: 90px;
+        background-color: #f5f5f5;
+        position: relative;
+        bottom: 20px;
+    }
+    .last-underline2 {
+        height: 4px;
+        width: 110px;
+        background-color: #f5f5f5;
+        position: relative;
+        bottom: 15px;
+    }
+    .last-talk {
+        width: fit-content;
+        height: 70px;
+        margin: auto;
+        text-align: center;
+        display: block;
+        position: relative;
+        top: 50px;
+    }
+    .let {
+        font-size: 32px;
+        font-weight: 800;
+    }
+    .coffee {
+        font-size: 15px;
+        font-weight: lighter;
+        position: relative;
+        bottom: 60px;
     }
     .footer-line {
         width: 100vw;
@@ -857,7 +1342,6 @@ footer#contact div#foot-cont div a:hover {
         justify-content: space-between;
         display: flex;
         margin: auto;
-        margin-bottom: 50px;
     }
     footer#contact div#foot-cont-mobile div.blocker {
         height: fit-content;
@@ -868,6 +1352,7 @@ footer#contact div#foot-cont div a:hover {
         font-size: 15px;
         font-weight: 600;
         transition: all 200ms ease-in-out;
+        margin-bottom: 10px;
     }
     footer#contact div#foot-cont-mobile div.blocker div:hover {
         transform: rotate(10deg);
