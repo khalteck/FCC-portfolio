@@ -573,6 +573,7 @@ footer#contact div#foot-cont div a:hover {
     }
     #first-div {
         width: fit-content;
+        background-color: blue;
         display: block;
         margin: auto;
     }
