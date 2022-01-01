@@ -557,7 +557,7 @@ footer#contact div#foot-cont div a:hover {
         color: #52cafd;
     }
     #welcome-section {
-        width: 103%;
+        width: 104.5vw;
         height: 100vh;
         background-image: url('https://i.pinimg.com/564x/33/de/b1/33deb1e0f6fa28bd71413300e86077be.jpg');
         background-repeat: no-repeat;
@@ -566,6 +566,8 @@ footer#contact div#foot-cont div a:hover {
         color: #ffffff;
         font-family: 'Montserrat', sans-serif;
         display: block;
+        position: relative;
+        left: -8px;
         margin: 0;
         z-index: 1;
     }
